@@ -1,12 +1,7 @@
 import React from 'react';
 import MainButton from '../components/MainButton';
 import block1img from '../assets/used/block-1-img.png';
-import airbnb from '../assets/used/airbnb.svg';
-import facebook from '../assets/used/facebook.svg';
-import google from '../assets/used/google.svg';
-import grab from '../assets/used/grab-logo.svg';
-import netflix from '../assets/used/netflix.svg';
-import amazon from '../assets/used/amazon.svg';
+import companies from '../assets/used/companies.svg';
 import stepsTimeline from '../assets/used/steps.svg';
 import aboutUs from "../assets/used/about-us.jpg";
 
@@ -45,22 +40,18 @@ function FirstBlock(){
         </div>
       </section>
 
-      
-      <div className="flex flex-col items-center">
-        <h3 className="font-semibold text-dusty text-4xl">Наши партнеры</h3>
-        <img src={google} alt="google" className="block relative py-44 px-14"></img>
-      </div>
+      <section>
+        <h3 className="font-semibold text-dusty text-4xl text-center block relative inset-x-80 inset-y-96">Наши партнеры</h3>
+        <img src={companies} alt="companies" className="block relative py-44 px-14"></img>
 
-      <div className='flex flex-col items-center'>
-        <h4 className="text-4xl font-semibold text-plumy">Как начать общение?</h4>
+        <h4 className="text-4xl font-semibold text-plumy text-center block-relative inset-x-74 inset-y-96">Как начать общение?</h4>
         <img src={stepsTimeline} alt="steps" className="block relative mx-32 my-32"></img>
-      </div>
-    
-    <div className='flex flex-col items-center'>
-        <h4 className="text-4xl font-semibold text-plumy ">О нас</h4>
-        <p className="text-2xl text-plumy">Langlink - это платформа для изучения иностранных языков, путем культурного обмена с людьми по всему миру.</p>
+
+        <h4 className="text-4xl font-semibold text-plumy text-center block-relative inset-x-74 inset-y-96">О нас</h4>
+        <p className="text-2xl text-plumy text-center block relative inset-x-12 inset-y-8">Langlink - это платформа для изучения иностранных языков, путем культурного обмена с людьми по всему миру.</p>
+
         <img src={aboutUs} alt="about" className="block relative py-28 px-80"></img>
-    </div>
+      </section>
     </>     
   );
 }
