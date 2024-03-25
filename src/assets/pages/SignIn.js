@@ -8,7 +8,6 @@ const SignIn = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-    
   });
 
   const [formErrors, setFormErrors] = useState({
